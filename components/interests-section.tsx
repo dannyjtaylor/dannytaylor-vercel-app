@@ -80,6 +80,26 @@ const interests = {
       name: "Back to the Future 1/2/3",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-AAadPMgkFXRrZqCeZNbx0VR7ebr1GE.png",
     },
+    {
+      name: "The Boys",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8WhQiOmL9x4cRD4xxkzLbzSvvJUcLV.png",
+    },
+    {
+      name: "Fallout",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-37FZIVBwDTdyUj3dxi8DApelDchhl4.png",
+    },
+    {
+      name: "Look Back",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-KDt3KK21NLm1cj3Drz8jRdwUll2eNB.png",
+    },
+    {
+      name: "Howl's Moving Castle",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-s62EqYMKiVLQ68ptv0YhoXvrdbUdNI.png",
+    },
+    {
+      name: "Spirited Away",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OQTQuZAUgJhX3cJj57Vi6TcM1brCWO.png",
+    },
   ],
   music: [
     {
@@ -97,6 +117,26 @@ const interests = {
     {
       name: "Gorillaz",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-A8AcmduSykRJZQXZlTJU6uokZQftsB.jpeg",
+    },
+    {
+      name: "Tame Impala",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-vMTdvw0fexZqtdjE6v3QvoN5g39hG5.png",
+    },
+    {
+      name: "TV Girl",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-l7sDeTLnneRdOSDOMPWugxCDDpcrvh.png",
+    },
+    {
+      name: "Mariya Takeuchi",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Dhey89LfyJ9U8evXt5K1SAsAlhWyc1.png",
+    },
+    {
+      name: "Huey Lewis & The News",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-vHYOIYPvgyN9KcxdhgUDFGc4TSra9M.png",
+    },
+    {
+      name: "Wallows",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mPXO4A6bY89nA0KVygnScq6WmV5S4X.png",
     },
   ],
   general: [
@@ -165,7 +205,7 @@ export function InterestsSection() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {interests.games.map((item) => (
                 <Card key={item.name} className="overflow-hidden group hover:shadow-lg transition-shadow">
-                  <div className="aspect-[3/4] relative bg-muted">
+                  <div className="aspect-[2/3] relative bg-muted">
                     <img
                       src={item.image || "/placeholder.svg"}
                       alt={item.name}

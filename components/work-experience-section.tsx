@@ -19,42 +19,36 @@ const experiences = [
     skills: ["Git", "GitHub", "Docker", "Python", "PostgreSQL", "JavaScript", "HTML", "CSS", "Unreal Engine"],
   },
   {
-    title: "Vice President of Professional Development",
-    company: "SHPE FLPoly",
-    location: "Lakeland, FL",
-    period: "May 2025 - Present",
-    type: "Leadership",
-    responsibilities: [
-      "Conducted LinkedIn, resume, mock interview, & GitHub workshops, creating portfolio websites for 80+ club members",
-    ],
-    skills: ["Networking", "Interpersonal Skills", "Leadership", "Professional Development"],
-  },
-  {
-    title: "Research Assistant",
+    title: "Student Research Assistant (Automotive & Applied Math)",
     company: "Florida Polytechnic University",
     location: "Lakeland, FL",
     period: "July 2024 - May 2025",
     type: "Part-time",
     responsibilities: [
-      "Developed a Python program using NumPy to generate polynomials under constraints",
-      "Investigated hybrid vehicle fuel efficiency, engine, & motor speed for passive & aggressive driving styles over 100km",
+      "Directed a research team to investigate fuel economy impact during passive & aggressive driving styles over 100 km",
+      "Interfaced with a Ford Maverick's OBD-II port using FORScan, tracking fuel efficiency, & engine & motor speed",
+      "Showcased research findings at Florida Polytechnic University's Research Day 2025 event",
+      "Asymptotically analyzed the best packing on self-similar fractals, furthering knowledge of advanced mathematical concepts",
+      "Utilized NumPy library to generate 1000+ polynomials under restrictions to search for trends between real & complex roots",
     ],
     skills: ["Python", "NumPy", "Precision Measuring", "Research"],
   },
   {
-    title: "Education Assistant",
+    title: "Student Education Assistant (TA)",
     company: "Florida Polytechnic University",
     location: "Lakeland, FL",
     period: "July 2024 - December 2024",
     type: "Part-time",
     responsibilities: [
-      "Teacher's Assistant for 1 section of Precalculus Algebra & Trigonometry & 3 sections of Differential Equations",
+      "Utilized Peer Learning Strategist techniques to tutor 20+ students taking Precalculus Algebra & Trigonometry weekly",
+      "TA'd for 1 section of Precalculus Algebra & Trigonometry as part of the Phoenix Rising program for Florida Polytechnic",
+      "Teacher's Assistant for 3 sections of Differential Equations for the Florida Polytechnic University Applied Math department",
     ],
     skills: ["Teaching", "Mathematics", "Mentoring"],
   },
 ]
 
-export function ExperienceSection() {
+export function WorkExperienceSection() {
   return (
     <section className="py-20 px-4">
       <div className="max-w-6xl mx-auto space-y-12">
@@ -63,7 +57,7 @@ export function ExperienceSection() {
             <Briefcase className="h-8 w-8 text-primary" />
             <h2 className="text-3xl md:text-4xl font-bold">Work Experience</h2>
           </div>
-          <p className="text-lg text-muted-foreground">Professional roles and leadership positions</p>
+          <p className="text-lg text-muted-foreground">Professional roles and contributions</p>
         </div>
 
         <div className="space-y-6">
@@ -96,7 +90,7 @@ export function ExperienceSection() {
 
               <div className="flex flex-wrap gap-2 pt-2">
                 {exp.skills.map((skill) => (
-                  <Badge key={skill} variant="outline" className="text-xs">
+                  <Badge key={skill} className="text-xs bg-primary text-primary-foreground">
                     {skill}
                   </Badge>
                 ))}

@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
-        {children}
+        <div className="min-h-screen bg-background/95 backdrop-blur-sm">{children}</div>
         <Analytics />
       </body>
     </html>

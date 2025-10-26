@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin, Mail, Link2, CreditCard } from "lucide-react"
 import Link from "next/link"
 
 export function HeroSection() {
@@ -26,18 +26,30 @@ export function HeroSection() {
 
         <div className="flex flex-wrap items-center justify-center gap-3">
           <Button asChild size="lg" className="gap-2">
+            <Link href="https://linktr.ee/dtaylor6456" target="_blank" rel="noopener noreferrer">
+              <Link2 className="h-5 w-5" />
+              Linktree
+            </Link>
+          </Button>
+          <Button asChild size="lg" className="gap-2">
+            <Link href="https://dot.cards/danieljtaylor" target="_blank" rel="noopener noreferrer">
+              <CreditCard className="h-5 w-5" />
+              dot.cards
+            </Link>
+          </Button>
+          <Button asChild size="lg" className="gap-2">
             <Link href="https://github.com/dannyjtaylor" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5" />
               GitHub
             </Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="gap-2 bg-transparent">
+          <Button asChild size="lg" className="gap-2">
             <Link href="https://linkedin.com/in/dannyjtaylor" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5" />
               LinkedIn
             </Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="gap-2 bg-transparent">
+          <Button asChild size="lg" className="gap-2">
             <Link href="mailto:dannyengineers@outlook.com">
               <Mail className="h-5 w-5" />
               Email

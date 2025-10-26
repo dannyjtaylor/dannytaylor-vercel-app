@@ -1,7 +1,7 @@
 import type React from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Github, Linkedin, ExternalLink } from "lucide-react"
+import { Github, Linkedin, ExternalLink, Link2, CreditCard } from "lucide-react"
 import Link from "next/link"
 
 export function ContactSection() {
@@ -13,56 +13,57 @@ export function ContactSection() {
         </div>
 
         <Card className="p-8 space-y-6">
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="space-y-2">
-              <h3 className="font-semibold text-lg">Contact Information</h3>
-              <div className="space-y-2 text-sm text-muted-foreground">
-                <p>
-                  <span className="font-medium text-foreground">Email:</span>{" "}
-                  <a href="mailto:dannyengineers@outlook.com" className="text-accent hover:underline">
-                    dannyengineers@outlook.com
-                  </a>
-                </p>
-                <p>
-                  <span className="font-medium text-foreground">Location:</span> Sebring, FL (Open to Relocate)
-                </p>
-                <p>
-                  <span className="font-medium text-foreground">Status:</span> Graduating May 2026 (BS) • May 2027 (MS)
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-2">
-              <h3 className="font-semibold text-lg">Leadership</h3>
-              <div className="space-y-2 text-sm text-muted-foreground">
-                <p className="font-medium text-foreground">Vice President of Professional Development</p>
-                <p>Society of Hispanic Professional Engineers (SHPE)</p>
-                <p>February 2024 – Present</p>
-              </div>
+          <div className="space-y-2">
+            <h3 className="font-semibold text-lg">Contact Information</h3>
+            <div className="space-y-2 text-sm text-muted-foreground">
+              <p>
+                <span className="font-medium text-foreground">Email:</span>{" "}
+                <a href="mailto:dannyengineers@outlook.com" className="text-accent hover:underline">
+                  dannyengineers@outlook.com
+                </a>
+              </p>
+              <p>
+                <span className="font-medium text-foreground">Location:</span> Sebring, FL (Open to Relocate)
+              </p>
+              <p>
+                <span className="font-medium text-foreground">Status:</span> Graduating May 2026 (BS) • May 2027 (MS)
+              </p>
             </div>
           </div>
 
           <div className="pt-6 border-t">
             <div className="flex flex-wrap gap-3 justify-center">
               <Button asChild size="lg" className="gap-2">
+                <Link href="https://linktr.ee/dtaylor6456" target="_blank" rel="noopener noreferrer">
+                  <Link2 className="h-5 w-5" />
+                  Linktree
+                </Link>
+              </Button>
+              <Button asChild size="lg" className="gap-2">
+                <Link href="https://dot.cards/danieljtaylor" target="_blank" rel="noopener noreferrer">
+                  <CreditCard className="h-5 w-5" />
+                  dot.cards
+                </Link>
+              </Button>
+              <Button asChild size="lg" className="gap-2">
                 <Link href="https://github.com/dannyjtaylor" target="_blank" rel="noopener noreferrer">
                   <Github className="h-5 w-5" />
                   GitHub
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="gap-2 bg-transparent">
+              <Button asChild size="lg" className="gap-2">
                 <Link href="https://linkedin.com/in/dannyjtaylor" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-5 w-5" />
                   LinkedIn
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="gap-2 bg-transparent">
+              <Button asChild size="lg" className="gap-2">
                 <Link href="https://dannyjtaylor.github.io" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="h-5 w-5" />
                   Portfolio
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="gap-2 bg-transparent">
+              <Button asChild size="lg" className="gap-2">
                 <Link href="https://twitch.tv/fierylights" target="_blank" rel="noopener noreferrer">
                   <TwitchIcon className="h-5 w-5" />
                   Twitch

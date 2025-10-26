@@ -1,5 +1,10 @@
+"use client"
+
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { Play } from "lucide-react"
+import { useState } from "react"
 
 const projects = [
   {
@@ -101,7 +106,7 @@ const projects = [
   {
     title: "60 Second Stopwatch",
     date: "April 2024",
-    image: "/breadboard-stopwatch-circuit-555-timer-seven-segme.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-38KfWOd47Lvpg5sKw5x1NgC9qTnI18.png",
     description:
       "Built a 60-second stopwatch circuit using sequential logic on a breadboard, designed to count from 0 to 59 and reset automatically.",
     highlights: [
@@ -110,7 +115,16 @@ const projects = [
       "Seven-segment BCD displays for output",
     ],
     tech: ["Sequential Logic", "555 Timer", "D-Flip Flops", "Multisim"],
+    videoUrl: "https://youtube.com/shorts/eNe7oX2Upe8?feature=share",
     additionalImages: [
+      {
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PtzWkbRGNtwqbIFmnwvtycjlXyXwNM.png",
+        label: "Multisim simulation of the complete stopwatch circuit",
+      },
+      {
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-JO0fnjT8IGG6FYZtlQKimWfIBI0T9A.png",
+        label: "555 timer circuit configuration",
+      },
       {
         src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clock%20signal-v6TnzcBRPhvFitT2vmgQuakcpkPRBj.png",
         label:
@@ -120,7 +134,36 @@ const projects = [
   },
 ]
 
+function VideoModal({ videoUrl, onClose }: { videoUrl: string; onClose: () => void }) {
+  // Convert YouTube Shorts URL to embed URL
+  const getEmbedUrl = (url: string) => {
+    const shortMatch = url.match(/youtube\.com\/shorts\/([^?]+)/)
+    if (shortMatch) {
+      return `https://www.youtube.com/embed/${shortMatch[1]}`
+    }
+    return url
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4" onClick={onClose}>
+      <div className="relative w-full max-w-4xl aspect-video" onClick={(e) => e.stopPropagation()}>
+        <button onClick={onClose} className="absolute -top-10 right-0 text-white hover:text-gray-300 text-xl font-bold">
+          ✕ Close
+        </button>
+        <iframe
+          src={getEmbedUrl(videoUrl)}
+          className="w-full h-full rounded-lg"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+    </div>
+  )
+}
+
 export function ProjectsSection() {
+  const [videoModalUrl, setVideoModalUrl] = useState<string | null>(null)
+
   return (
     <section className="py-20 px-4 bg-muted/30">
       <div className="max-w-6xl mx-auto space-y-12">
@@ -147,6 +190,13 @@ export function ProjectsSection() {
                   </div>
                   <p className="text-muted-foreground">{project.description}</p>
                 </div>
+
+                {project.videoUrl && (
+                  <Button onClick={() => setVideoModalUrl(project.videoUrl!)} className="gap-2">
+                    <Play className="h-4 w-4" />
+                    Watch Demo
+                  </Button>
+                )}
 
                 <ul className="space-y-2 text-sm">
                   {project.highlights.map((highlight, i) => (
@@ -186,6 +236,8 @@ export function ProjectsSection() {
           ))}
         </div>
       </div>
+
+      {videoModalUrl && <VideoModal videoUrl={videoModalUrl} onClose={() => setVideoModalUrl(null)} />}
     </section>
   )
 }

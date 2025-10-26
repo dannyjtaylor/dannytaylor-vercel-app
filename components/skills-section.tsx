@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Code2, Cpu, Wrench, Award } from "lucide-react"
+import { Code2, Microscope as Microchip, Wrench } from "lucide-react"
 
 export function SkillsSection() {
   const skills = {
@@ -29,17 +29,13 @@ export function SkillsSection() {
       "GitLab",
       "Kubernetes",
     ],
-    certifications: ["Python Certified Associate Programmer (PCAP)", "PCEP", "CompTIA Tech+", "SOLIDWORKS (CSWA)"],
   }
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 bg-muted/30">
       <div className="max-w-6xl mx-auto space-y-12">
         <div className="text-center space-y-4">
           <h2 className="text-3xl md:text-4xl font-bold">Technical Skills</h2>
-          <p className="text-lg text-muted-foreground">
-            A comprehensive toolkit for building embedded systems, AI applications, and full-stack solutions
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -52,7 +48,7 @@ export function SkillsSection() {
             </div>
             <div className="flex flex-wrap gap-2">
               {skills.languages.map((skill) => (
-                <Badge key={skill} variant="secondary">
+                <Badge key={skill} className="bg-primary text-primary-foreground">
                   {skill}
                 </Badge>
               ))}
@@ -62,13 +58,13 @@ export function SkillsSection() {
           <Card className="p-6 space-y-4">
             <div className="flex items-center gap-3">
               <div className="p-2 rounded-lg bg-secondary/10">
-                <Cpu className="h-5 w-5 text-secondary" />
+                <Code2 className="h-5 w-5 text-secondary" />
               </div>
               <h3 className="text-lg font-semibold">Frameworks & Libraries</h3>
             </div>
             <div className="flex flex-wrap gap-2">
               {skills.frameworks.map((skill) => (
-                <Badge key={skill} variant="secondary">
+                <Badge key={skill} className="bg-primary text-primary-foreground">
                   {skill}
                 </Badge>
               ))}
@@ -78,13 +74,13 @@ export function SkillsSection() {
           <Card className="p-6 space-y-4">
             <div className="flex items-center gap-3">
               <div className="p-2 rounded-lg bg-accent/10">
-                <Cpu className="h-5 w-5 text-accent" />
+                <Microchip className="h-5 w-5 text-accent" />
               </div>
               <h3 className="text-lg font-semibold">Hardware</h3>
             </div>
             <div className="flex flex-wrap gap-2">
               {skills.hardware.map((skill) => (
-                <Badge key={skill} variant="outline">
+                <Badge key={skill} className="bg-primary text-primary-foreground">
                   {skill}
                 </Badge>
               ))}
@@ -100,29 +96,13 @@ export function SkillsSection() {
             </div>
             <div className="flex flex-wrap gap-2">
               {skills.tools.map((skill) => (
-                <Badge key={skill} variant="outline">
+                <Badge key={skill} className="bg-primary text-primary-foreground">
                   {skill}
                 </Badge>
               ))}
             </div>
           </Card>
         </div>
-
-        <Card className="p-6 space-y-4">
-          <div className="flex items-center gap-3">
-            <div className="p-2 rounded-lg bg-primary/10">
-              <Award className="h-5 w-5 text-primary" />
-            </div>
-            <h3 className="text-lg font-semibold">Certifications</h3>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {skills.certifications.map((cert) => (
-              <Badge key={cert} variant="default">
-                {cert}
-              </Badge>
-            ))}
-          </div>
-        </Card>
       </div>
     </section>
   )
