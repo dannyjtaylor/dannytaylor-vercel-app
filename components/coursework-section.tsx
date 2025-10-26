@@ -1,53 +1,101 @@
 import { Card } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { BookOpen } from "lucide-react"
 
-const coursework = [
-  // Core Engineering
-  "Computer Architecture and Organization",
-  "Microprocessors",
-  "Digital Logic Design",
-  "Digital Electronics",
-  "Embedded Operating Systems",
-  "Circuits 1",
-  "Systems and Signals",
-
-  // Programming & Software
-  "Object Oriented Programming",
-  "Introduction to Computation and Programming",
-  "Computational Linear Algebra",
-  "Discrete Mathematics",
-
-  // Advanced Topics
-  "Intro to Autonomous Vehicles",
-  "Electric and Hybrid Vehicles",
-  "Quantum Information and Computing",
-  "Advanced Engineering Math",
-
-  // Mathematics
-  "Analytic Geometry and Calculus 1",
-  "Analytic Geometry and Calculus 2",
-  "Analytic Geometry and Calculus 3",
-  "Differential Equations",
-  "Elements of Topology I",
-  "Probability and Statistics",
-
-  // Physics & Science
-  "Physics 1",
-  "Physics 2",
-  "Chemistry 1",
-
-  // Design & Labs
-  "Computer Engineering Design Lab 1",
-  "Computer Engineering Lab 2",
-  "Senior Design 1",
-  "Engineering Skills and Design",
-  "Electrical and Computer Engineering Skills and Design",
-
-  // Professional Development
-  "Technical Writing",
-  "Legal, Ethical, and Management Issues in Technology",
-  "Career Design for STEM Disciplines",
+const courseworkByYear = [
+  {
+    year: "Freshman Year",
+    semesters: [
+      {
+        semester: "Fall",
+        courses: ["Calculus 1", "Technical Writing", "Chemistry 1", "Chemistry 1 Lab", "Physics 1", "Physics 1 Lab"],
+      },
+      {
+        semester: "Spring",
+        courses: [
+          "Introduction to Computation and Programming (C)",
+          "Calculus 2",
+          "Concepts and Methods for Engineering and Computer Science",
+          "Legal, Ethical, and Management Issues in Technology",
+        ],
+      },
+    ],
+  },
+  {
+    year: "Sophomore Year",
+    semesters: [
+      {
+        semester: "Fall",
+        courses: [
+          "Discrete Math",
+          "Computational Linear Algebra",
+          "Object Oriented Programming (OOP)",
+          "Circuits 1",
+          "Engineering Skills and Design",
+          "Differential Equations",
+          "Physics 2",
+          "Physics 2 Lab",
+        ],
+      },
+      {
+        semester: "Spring",
+        courses: [
+          "Electrical and Computer Engineering Skills and Design",
+          "Circuits 2",
+          "Digital Logic Design",
+          "Calculus 3",
+          "Probability and Statistics",
+        ],
+      },
+    ],
+  },
+  {
+    year: "Junior Year",
+    semesters: [
+      {
+        semester: "Fall",
+        courses: [
+          "Data Structures and Algorithms",
+          "Digital Electronics",
+          "Computer Engineering Design Lab 1",
+          "Intro to Autonomous Vehicles",
+          "Microprocessors",
+        ],
+      },
+      {
+        semester: "Spring",
+        courses: [
+          "Computer Engineering Design Lab 2",
+          "Electric and Hybrid Vehicles",
+          "Computer Architecture and Organization",
+          "Elements of Topology 1",
+        ],
+      },
+    ],
+  },
+  {
+    year: "Senior Year",
+    semesters: [
+      {
+        semester: "Fall",
+        courses: [
+          "Quantum Information and Computing",
+          "Embedded Operating Systems",
+          "Systems and Signals",
+          "Advanced Engineering Math (Master's Degree)",
+          "Senior Design 1 (Capstone)",
+        ],
+      },
+      {
+        semester: "Spring (Just registered!)",
+        courses: [
+          "VLSI Design",
+          "Advanced Digital Signal Processing (Master's Degree)",
+          "Smart Grid and Cyber Physical Security",
+          "Senior Design 2 (Capstone)",
+        ],
+      },
+    ],
+  },
 ]
 
 export function CourseworkSection() {
@@ -64,15 +112,30 @@ export function CourseworkSection() {
           </p>
         </div>
 
-        <Card className="p-8">
-          <div className="flex flex-wrap gap-2 justify-center">
-            {coursework.map((course) => (
-              <Badge key={course} variant="secondary" className="text-sm py-2 px-3">
-                {course}
-              </Badge>
-            ))}
-          </div>
-        </Card>
+        <div className="space-y-8">
+          {courseworkByYear.map((yearData) => (
+            <Card key={yearData.year} className="overflow-hidden">
+              <div className="bg-primary/10 px-6 py-4 border-b">
+                <h3 className="text-xl font-bold">{yearData.year}</h3>
+              </div>
+              <div className="divide-y">
+                {yearData.semesters.map((semesterData) => (
+                  <div key={semesterData.semester} className="p-6">
+                    <h4 className="text-lg font-semibold mb-4 text-primary">{semesterData.semester}</h4>
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                      {semesterData.courses.map((course) => (
+                        <li key={course} className="flex gap-2 items-start">
+                          <span className="text-accent mt-1.5 text-xs">▸</span>
+                          <span className="text-sm leading-relaxed">{course}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
   )

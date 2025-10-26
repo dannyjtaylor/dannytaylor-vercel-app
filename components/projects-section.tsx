@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Enterprise RAG Chatbot",
     date: "September 2025",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-XuKThrBaJSwCHJ7bl5gP1WPz0O8CoW.jpeg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lXh8CnOlLuPntVPPy2f1yWRLdZgrHG.png",
     description:
       "An internal AI assistant supporting over 650 city employees across 11 departments. Built with GPT-4o, Python, Docker, PostgreSQL, HTML, CSS, and JavaScript, the assistant enables natural language access to guides, manuals, forms, and employee data.",
     highlights: [
@@ -37,7 +37,7 @@ const projects = [
   {
     title: "Tesla Model A",
     date: "November 2024",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lXh8CnOlLuPntVPPy2f1yWRLdZgrHG.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-onMD1pdY2yyAe9oBKYGAOLIkmoeALk.png",
     description:
       "Autonomous electric vehicle featuring a 3D-printed PLA chassis and powered by DC motors, MOSFETs, & 9V batteries on a breadboard platform.",
     highlights: [
@@ -50,7 +50,7 @@ const projects = [
   {
     title: "4-bit Arithmetic Logic Unit (ALU)",
     date: "November 2024",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clock%20signal-0KJDD6Fvlojkv0LPxpQrk0mNAPwxv5.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-XuKThrBaJSwCHJ7bl5gP1WPz0O8CoW.jpeg",
     description:
       "Circuit capable of executing XOR, AND, OR, XNOR, NAND, NOR, magnitude comparison, and binary addition for two 4-bit inputs.",
     highlights: [
@@ -97,12 +97,6 @@ const projects = [
       "Successfully executed three lane changes and highway exit maneuvers",
     ],
     tech: ["Simulink", "MATLAB", "PID", "Pure Pursuit", "Stanley Controller"],
-    additionalImages: [
-      {
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-onMD1pdY2yyAe9oBKYGAOLIkmoeALk.png",
-        label: "Physical Autonomous Vehicle Model",
-      },
-    ],
   },
   {
     title: "60 Second Stopwatch",
@@ -116,6 +110,13 @@ const projects = [
       "Seven-segment BCD displays for output",
     ],
     tech: ["Sequential Logic", "555 Timer", "D-Flip Flops", "Multisim"],
+    additionalImages: [
+      {
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clock%20signal-v6TnzcBRPhvFitT2vmgQuakcpkPRBj.png",
+        label:
+          "The clock signal for the stopwatch. Generated as a square wave from the 555 timer/astable multivibrator.",
+      },
+    ],
   },
 ]
 
@@ -131,11 +132,11 @@ export function ProjectsSection() {
         <div className="grid gap-6">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video relative bg-muted">
+              <div className="aspect-video relative bg-muted max-h-96">
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="p-6 space-y-4">
@@ -161,11 +162,11 @@ export function ProjectsSection() {
                     {project.additionalImages.map((img, i) => (
                       <div key={i} className="space-y-2">
                         <p className="text-sm font-medium text-muted-foreground">{img.label}</p>
-                        <div className="aspect-video relative bg-muted rounded-lg overflow-hidden">
+                        <div className="aspect-video relative bg-muted rounded-lg overflow-hidden max-h-96">
                           <img
                             src={img.src || "/placeholder.svg"}
                             alt={img.label}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain"
                           />
                         </div>
                       </div>
