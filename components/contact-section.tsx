@@ -9,7 +9,7 @@ export function ContactSection() {
     <section className="py-20 px-4">
       <div className="max-w-4xl mx-auto space-y-12">
         <div className="text-center space-y-4">
-          <h2 className="text-3xl md:text-4xl font-bold">Let's Connect</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Let's connect! :3</h2>
         </div>
 
         <Card className="p-8 space-y-6">
@@ -34,15 +34,9 @@ export function ContactSection() {
           <div className="pt-6 border-t">
             <div className="flex flex-wrap gap-3 justify-center">
               <Button asChild size="lg" className="gap-2">
-                <Link href="https://linktr.ee/dtaylor6456" target="_blank" rel="noopener noreferrer">
-                  <Link2 className="h-5 w-5" />
-                  Linktree
-                </Link>
-              </Button>
-              <Button asChild size="lg" className="gap-2">
-                <Link href="https://dot.cards/danieljtaylor" target="_blank" rel="noopener noreferrer">
-                  <CreditCard className="h-5 w-5" />
-                  dot.cards
+                <Link href="https://linkedin.com/in/dannyjtaylor" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-5 w-5" />
+                  LinkedIn
                 </Link>
               </Button>
               <Button asChild size="lg" className="gap-2">
@@ -52,9 +46,9 @@ export function ContactSection() {
                 </Link>
               </Button>
               <Button asChild size="lg" className="gap-2">
-                <Link href="https://linkedin.com/in/dannyjtaylor" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="h-5 w-5" />
-                  LinkedIn
+                <Link href="https://dot.cards/danieljtaylor" target="_blank" rel="noopener noreferrer">
+                  <CreditCard className="h-5 w-5" />
+                  dot.card
                 </Link>
               </Button>
               <Button asChild size="lg" className="gap-2">
@@ -67,6 +61,12 @@ export function ContactSection() {
                 <Link href="https://twitch.tv/fierylights" target="_blank" rel="noopener noreferrer">
                   <TwitchIcon className="h-5 w-5" />
                   Twitch
+                </Link>
+              </Button>
+              <Button asChild size="lg" className="gap-2">
+                <Link href="https://linktr.ee/dtaylor6456" target="_blank" rel="noopener noreferrer">
+                  <Link2 className="h-5 w-5" />
+                  Linktree
                 </Link>
               </Button>
             </div>

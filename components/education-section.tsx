@@ -79,13 +79,6 @@ export function EducationSection() {
 
         <div className="grid md:grid-cols-2 gap-6">
           <Card className="p-6 space-y-4">
-            <div className="flex items-center gap-4">
-              <img
-                src="https://www.floridapoly.edu/wp-content/uploads/FPU-Horizontal-Logo-2023.png"
-                alt="Florida Polytechnic University"
-                className="h-12 w-auto object-contain"
-              />
-            </div>
             <div>
               <p className="font-semibold text-lg">Florida Polytechnic University</p>
               <p className="text-sm text-muted-foreground">
@@ -96,13 +89,6 @@ export function EducationSection() {
           </Card>
 
           <Card className="p-6 space-y-4">
-            <div className="flex items-center gap-4">
-              <img
-                src="https://www.floridapoly.edu/wp-content/uploads/FPU-Horizontal-Logo-2023.png"
-                alt="Florida Polytechnic University"
-                className="h-12 w-auto object-contain"
-              />
-            </div>
             <div>
               <p className="font-semibold text-lg">Florida Polytechnic University</p>
               <p className="text-sm text-muted-foreground">

@@ -66,6 +66,10 @@ const interests = {
       name: "Persona 3/4/5",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8QEnLMV4weUk1KlTI1NQHDeom4OqNX.png",
     },
+    {
+      name: "Hollow Knight: Silksong",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VHfCdTbz9rfPxtTv4lYOLFsyhQvibM.png",
+    },
   ],
   movies: [
     {
@@ -145,8 +149,26 @@ const interests = {
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-KnLzGwLslRT48TXl2mXtbD7PB89na5.png",
       link: "https://twitch.tv/fierylights",
     },
-    { name: "Problem Solving", image: "/engineering-problem-solving-concept.jpg" },
-    { name: "Embedded Systems", image: "/embedded-systems-circuit-board-arduino.jpg" },
+    {
+      name: "Problem Solving",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-hPv6SwzXYT45gBzCmJtlQxhu941Dy6.png",
+    },
+    {
+      name: "Embedded Systems",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LMmoAXeIXI0UpgSNGzaTvuEONVt4UB.png",
+    },
+    {
+      name: "Going to the Gym",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2AsnYnzrIcDNqg96SKBLholaoVfvgE.png",
+    },
+    {
+      name: "Sleeping",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Dniq1czH3lSoMmalSufnjTnZceSV2x.png",
+    },
+    {
+      name: "Discord Bot",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-826q9vJsxEO2tgyQfjJMUnfaRMxVq8.png",
+    },
   ],
 }
 
