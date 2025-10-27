@@ -3,8 +3,7 @@
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Play } from "lucide-react"
-import { useState } from "react"
+import { ExternalLink } from "lucide-react"
 
 const projects = [
   {
@@ -79,7 +78,7 @@ const projects = [
     tech: ["PostgreSQL", "Python", "FastAPI", "Docker", "JavaScript", "HTML", "CSS"],
   },
   {
-    title: "CI/CD Pipeline from Scratch",
+    title: "Custom CI/CD Pipeline",
     date: "June 2025",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image%20%282%29-m1kbmQWEPL6SYSCRwCmdKJSHjlX35L.png",
     description:
@@ -115,7 +114,7 @@ const projects = [
       "Seven-segment BCD displays for output",
     ],
     tech: ["Sequential Logic", "555 Timer", "D-Flip Flops", "Multisim"],
-    videoUrl: "https://youtube.com/shorts/eNe7oX2Upe8?feature=share",
+    demoUrl: "https://www.youtube.com/shorts/eNe7oX2Upe8",
     additionalImages: [
       {
         src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PtzWkbRGNtwqbIFmnwvtycjlXyXwNM.png",
@@ -134,42 +133,12 @@ const projects = [
   },
 ]
 
-function VideoModal({ videoUrl, onClose }: { videoUrl: string; onClose: () => void }) {
-  // Convert YouTube Shorts URL to embed URL
-  const getEmbedUrl = (url: string) => {
-    const shortMatch = url.match(/youtube\.com\/shorts\/([^?]+)/)
-    if (shortMatch) {
-      return `https://www.youtube.com/embed/${shortMatch[1]}`
-    }
-    return url
-  }
-
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4" onClick={onClose}>
-      <div className="relative w-full max-w-4xl aspect-video" onClick={(e) => e.stopPropagation()}>
-        <button onClick={onClose} className="absolute -top-10 right-0 text-white hover:text-gray-300 text-xl font-bold">
-          ✕ Close
-        </button>
-        <iframe
-          src={getEmbedUrl(videoUrl)}
-          className="w-full h-full rounded-lg"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-      </div>
-    </div>
-  )
-}
-
 export function ProjectsSection() {
-  const [videoModalUrl, setVideoModalUrl] = useState<string | null>(null)
-
   return (
     <section className="py-20 px-4 bg-muted/30">
       <div className="max-w-6xl mx-auto space-y-12">
         <div className="text-center space-y-4">
-          <h2 className="text-3xl md:text-4xl font-bold">Featured Projects</h2>
-          <p className="text-lg text-muted-foreground">From autonomous systems to enterprise AI applications</p>
+          <h2 className="text-3xl md:text-4xl font-bold">Projects</h2>
         </div>
 
         <div className="grid gap-6">
@@ -191,10 +160,12 @@ export function ProjectsSection() {
                   <p className="text-muted-foreground">{project.description}</p>
                 </div>
 
-                {project.videoUrl && (
-                  <Button onClick={() => setVideoModalUrl(project.videoUrl!)} className="gap-2">
-                    <Play className="h-4 w-4" />
-                    Watch Demo
+                {project.demoUrl && (
+                  <Button asChild className="gap-2">
+                    <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="h-4 w-4" />
+                      Watch Demo
+                    </a>
                   </Button>
                 )}
 
@@ -236,8 +207,6 @@ export function ProjectsSection() {
           ))}
         </div>
       </div>
-
-      {videoModalUrl && <VideoModal videoUrl={videoModalUrl} onClose={() => setVideoModalUrl(null)} />}
     </section>
   )
 }

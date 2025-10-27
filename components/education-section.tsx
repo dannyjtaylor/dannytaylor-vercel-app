@@ -84,7 +84,7 @@ export function EducationSection() {
               <p className="text-sm text-muted-foreground">
                 Bachelor of Science: Computer Engineering – Advanced Topics
               </p>
-              <p className="text-sm text-muted-foreground">Graduating May 2026 • GPA: 4.0/4.0</p>
+              <p className="text-base text-muted-foreground font-medium mt-2">Graduating May 2026 • GPA: 4.0/4.0</p>
             </div>
           </Card>
 
@@ -94,7 +94,7 @@ export function EducationSection() {
               <p className="text-sm text-muted-foreground">
                 Master of Science: Electrical Engineering – Computer Engineering Focus
               </p>
-              <p className="text-sm text-muted-foreground">Graduating May 2027 • GPA: 4.0/4.0</p>
+              <p className="text-base text-muted-foreground font-medium mt-2">Graduating May 2027 • GPA: 4.0/4.0</p>
             </div>
           </Card>
         </div>

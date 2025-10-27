@@ -44,7 +44,6 @@ export function CertificationsSection() {
             <Award className="h-8 w-8 text-primary" />
             <h2 className="text-3xl md:text-4xl font-bold">Certifications</h2>
           </div>
-          <p className="text-lg text-muted-foreground">Professional certifications demonstrating technical expertise</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">

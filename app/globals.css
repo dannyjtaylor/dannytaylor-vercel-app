@@ -76,9 +76,10 @@
   --sidebar-ring: oklch(0.65 0.2 285);
 }
 
+/* Updated font to Trebuchet MS */
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
-  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --font-sans: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

@@ -1,18 +1,38 @@
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Code2, Microscope as Microchip, Wrench } from "lucide-react"
+import { Code2, Microscope as Microchip, Wrench, BookOpen } from "lucide-react"
 
 export function SkillsSection() {
   const skills = {
     languages: ["Python", "C/C++", "Verilog", "SystemVerilog", "AVR C", "HTML", "CSS", "JavaScript", "MATLAB", "SQL"],
-    frameworks: ["LangChain", "ChromaDB", "FastAPI", "Docker", "PostgreSQL", "Git", "Qiskit", "PyTesseract"],
+    frameworks: ["LangChain", "ChromaDB", "FastAPI", "Docker", "PostgreSQL", "Git", "Qiskit"],
+    pythonLibraries: [
+      "PyTesseract",
+      "Qiskit",
+      "os",
+      "re",
+      "pandas",
+      "NumPy",
+      "discord.py",
+      "LangChain",
+      "LangGraph",
+      "ChromaDB",
+      "PyMuPDF (fitz)",
+      "Pillow",
+      "YOLO",
+      "OpenCV (cv2)",
+    ],
     hardware: [
       "Arduino Uno R3",
       "Raspberry Pi 5",
       "Intel FPGA DE10-Lite",
       "STM Nucleo-F446RE",
       "ARM Cortex M4F",
+      "AtMEGA328P",
       "3D Printing",
+      "Digital Logic Design",
+      "Sequential Logic Design",
+      "Circuit Design",
     ],
     tools: [
       "STM32CubeIDE",
@@ -73,6 +93,22 @@ export function SkillsSection() {
 
           <Card className="p-6 space-y-4">
             <div className="flex items-center gap-3">
+              <div className="p-2 rounded-lg bg-secondary/10">
+                <BookOpen className="h-5 w-5 text-secondary" />
+              </div>
+              <h3 className="text-lg font-semibold">Python Libraries</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {skills.pythonLibraries.map((skill) => (
+                <Badge key={skill} className="bg-primary text-primary-foreground">
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </Card>
+
+          <Card className="p-6 space-y-4">
+            <div className="flex items-center gap-3">
               <div className="p-2 rounded-lg bg-accent/10">
                 <Microchip className="h-5 w-5 text-accent" />
               </div>
@@ -87,7 +123,7 @@ export function SkillsSection() {
             </div>
           </Card>
 
-          <Card className="p-6 space-y-4">
+          <Card className="p-6 space-y-4 md:col-span-2">
             <div className="flex items-center gap-3">
               <div className="p-2 rounded-lg bg-accent/10">
                 <Wrench className="h-5 w-5 text-accent" />

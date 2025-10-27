@@ -19,9 +19,8 @@ export function HeroSection() {
 
         <div className="space-y-4">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-balance">Daniel J. Taylor</h1>
-          <p className="text-xl md:text-2xl text-muted-foreground font-mono">Computer Engineering Student</p>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
-            Building autonomous systems, AI applications, and embedded solutions at Florida Polytechnic University
+          <p className="text-xl md:text-2xl text-muted-foreground font-sans">
+            Computer Engineering Senior, Electrical Engineering EE (4+1)
           </p>
         </div>
 
@@ -65,8 +64,8 @@ export function HeroSection() {
         </div>
 
         <div className="pt-8 flex flex-col items-center gap-2">
-          <p className="text-sm text-muted-foreground">GPA: 4.0/4.0</p>
-          <p className="text-sm text-muted-foreground">Graduating May 2026 (BS) • May 2027 (MS)</p>
+          <p className="text-base text-muted-foreground font-medium">GPA: 4.0/4.0</p>
+          <p className="text-base text-muted-foreground font-medium">Graduating May 2026 (BS) • May 2027 (MS)</p>
         </div>
       </div>
     </section>

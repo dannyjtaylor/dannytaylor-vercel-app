@@ -13,11 +13,11 @@ const leadershipRoles = [
       "In Rotaract, I participated in numerous volunteer and community projects. One event I participated in was volunteering at a Veteran's Day breakfast. I helped set up and host many veterans at our local community center. I also helped regulate traffic and pass out water at a local 5k race. I am grateful to also participate in a mentorship program between the Florida Polytechnic University Rotaract Club and the Auburndale Rotary Club. Here I was paired with Alex Cam, the Vice President of Operations for Cams Catering and serves as the President of the Greater Auburndale Chamber of Commerce, and serves on the Board of Directors for the Auburndale Rotary Club.",
     skills: ["Volunteering", "Community Involvement", "Professional Development"],
     motto: "Fellowship through service",
-    importantPeople: [
+    speakers: [
       "Alex Cam - Mayor of Auburndale",
       "Jeff Tillman - City Manager of Auburndale",
       "Robert Green - Ex-Mayor and Ex-City Manager of Auburndale",
-      "Hiep Nyugen, CIO/Smart City Officer of City of Winter Haven",
+      "Hiep Nguyen - CIO/Smart City Officer for the City of Winter Haven",
       "Greg Recker, COO of Chastain Skillman",
       "Sam Sandusky, CEO of Big Sur Technology",
       "Publix",
@@ -115,9 +115,6 @@ export function LeadershipSection() {
             <Users className="h-8 w-8 text-primary" />
             <h2 className="text-3xl md:text-4xl font-bold">Leadership and Professional Development</h2>
           </div>
-          <p className="text-lg text-muted-foreground">
-            Leading initiatives to empower students and build professional communities
-          </p>
         </div>
 
         <div className="space-y-6">
@@ -162,11 +159,11 @@ export function LeadershipSection() {
                 </div>
               )}
 
-              {role.importantPeople && (
+              {role.speakers && (
                 <div className="space-y-2 pt-2">
-                  <h5 className="font-semibold text-sm">Important People</h5>
+                  <h5 className="font-semibold text-sm">Speakers</h5>
                   <ul className="grid md:grid-cols-2 gap-2 text-sm">
-                    {role.importantPeople.map((person, idx) => (
+                    {role.speakers.map((person, idx) => (
                       <li key={idx} className="flex gap-2">
                         <span className="text-accent mt-1">•</span>
                         <span>{person}</span>

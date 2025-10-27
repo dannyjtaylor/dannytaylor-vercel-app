@@ -10,7 +10,8 @@ const experiences = [
     period: "July 2024 - Present",
     type: "Internship",
     responsibilities: [
-      "Built an interactable web database utilizing Docker, Python, PostgreSQL, JavaScript, HTML, & CSS for 650+ employees",
+      "Automated cross-departmental workflows through Python scripts for CSV-to-Excel conversion with Pandas, OCR-based lab data extraction with PyTesseract, & photo processing for Jostle intranet with Photoshop Python API",
+      "Built an interactable Excel-esque web database utilizing Docker, Python, PostgreSQL, JavaScript, HTML, & CSS for 650+ employees",
       "Developed an internal AI to answer FAQs, dispense forms, & analyze data using Python, Docker, PostgreSQL & HTML/CSS/JS",
       "Created Main & Pause Menu, Loading Screen, & environment for Lake Elbert Digital Twin in Unreal Engine with ArcGIS",
       "Increased city security & implemented Kisi code readers, controllers, IDs, and 2FA hardware tokens for 650+ employees",
@@ -55,9 +56,8 @@ export function WorkExperienceSection() {
         <div className="text-center space-y-4">
           <div className="flex items-center justify-center gap-3">
             <Briefcase className="h-8 w-8 text-primary" />
-            <h2 className="text-3xl md:text-4xl font-bold">Work Experience</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Experience</h2>
           </div>
-          <p className="text-lg text-muted-foreground">Professional roles and contributions</p>
         </div>
 
         <div className="space-y-6">

@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Tv, Gamepad2, Film, Music, Sparkles } from "lucide-react"
+import { Tv, Gamepad2, Film, Music, Sparkles, BookOpen } from "lucide-react"
 
 const interests = {
   anime: [
@@ -40,6 +40,22 @@ const interests = {
       name: "Cowboy Bebop",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-RLXzfwEn58FmDOg4EjIPqI3TST6u7P.jpeg",
     },
+    {
+      name: "DanDaDan",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GgsjB6nuAA2Ml6Ctq4n1a7jj6vDoIp.png",
+    },
+    {
+      name: "One Punch Man",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-JnH2roQ4eee1i1wfPaEhGvWBRukYHA.png",
+    },
+    {
+      name: "Steins;Gate",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OBv0S5vnmRngFiJJn49V5TyGm1lvwT.png",
+    },
+    {
+      name: "To Be Hero X",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VTR1hnOOSO7expLUCpBWb26KyKTFzY.png",
+    },
   ],
   games: [
     {
@@ -69,6 +85,30 @@ const interests = {
     {
       name: "Hollow Knight: Silksong",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VHfCdTbz9rfPxtTv4lYOLFsyhQvibM.png",
+    },
+    {
+      name: "Terraria",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-cBUWL5xOQW1mcrsmRNoz9yd3zaCyLA.png",
+    },
+    {
+      name: "Phoenix Wright: Ace Attorney (All Games!)",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VOQszomn1qUw7ZIYMX9o3RPR61mFwd.png",
+    },
+    {
+      name: "Call of Duty",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-qGnh0dN9auIxmM1Yv4xrni96e927Ml.png",
+    },
+    {
+      name: "Minecraft",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-V9M1QciflCsAzAzaIgRM1buiSQAKJ0.png",
+    },
+    {
+      name: "GTA",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ZY9oDWVOVENYaNwBFrENekZh0ifOSN.png",
+    },
+    {
+      name: "Undertale",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-D4hgWASaMwZ5T9NyJEYfm4RrCqC7tf.png",
     },
   ],
   movies: [
@@ -103,6 +143,14 @@ const interests = {
     {
       name: "Spirited Away",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OQTQuZAUgJhX3cJj57Vi6TcM1brCWO.png",
+    },
+    {
+      name: "Invincible",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VaYrMLjq0jRUQFNOgNirXtSfuEDN2i.png",
+    },
+    {
+      name: "All the Spidermans",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-4ONZHkEbUvh4VbjY8ZT6jC6BwC8qyl.jpeg",
     },
   ],
   music: [
@@ -143,6 +191,20 @@ const interests = {
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mPXO4A6bY89nA0KVygnScq6WmV5S4X.png",
     },
   ],
+  books: [
+    {
+      name: "The Enemy (Book Series)",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RbEFlcK2YXJNiRgGKYxQwGOxBNDdCS.png",
+    },
+    {
+      name: "Scythe",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-sn7oTCpcz47Hj0ziF5n96ZUm6zYDQf.png",
+    },
+    {
+      name: "Percy Jackson",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PphNxs1hxIxETErNpuX2XiwcdDtmUV.png",
+    },
+  ],
   general: [
     {
       name: "Streaming on Twitch",
@@ -181,7 +243,7 @@ export function InterestsSection() {
         </div>
 
         <Tabs defaultValue="anime" className="w-full">
-          <TabsList className="grid w-full grid-cols-5 max-w-3xl mx-auto">
+          <TabsList className="grid w-full grid-cols-6 max-w-3xl mx-auto">
             <TabsTrigger value="anime" className="gap-2">
               <Tv className="h-4 w-4" />
               <span className="hidden sm:inline">Anime</span>
@@ -198,9 +260,13 @@ export function InterestsSection() {
               <Music className="h-4 w-4" />
               <span className="hidden sm:inline">Music</span>
             </TabsTrigger>
+            <TabsTrigger value="books" className="gap-2">
+              <BookOpen className="h-4 w-4" />
+              <span className="hidden sm:inline">Books</span>
+            </TabsTrigger>
             <TabsTrigger value="general" className="gap-2">
               <Sparkles className="h-4 w-4" />
-              <span className="hidden sm:inline">More</span>
+              <span className="hidden sm:inline">Misc.</span>
             </TabsTrigger>
           </TabsList>
 
@@ -216,7 +282,7 @@ export function InterestsSection() {
                     />
                   </div>
                   <div className="p-3">
-                    <p className="text-sm font-medium text-center">{item.name}</p>
+                    <p className="text-base font-medium text-center">{item.name}</p>
                   </div>
                 </Card>
               ))}
@@ -235,7 +301,7 @@ export function InterestsSection() {
                     />
                   </div>
                   <div className="p-3">
-                    <p className="text-sm font-medium text-center">{item.name}</p>
+                    <p className="text-base font-medium text-center">{item.name}</p>
                   </div>
                 </Card>
               ))}
@@ -254,7 +320,7 @@ export function InterestsSection() {
                     />
                   </div>
                   <div className="p-3">
-                    <p className="text-sm font-medium text-center">{item.name}</p>
+                    <p className="text-base font-medium text-center">{item.name}</p>
                   </div>
                 </Card>
               ))}
@@ -273,7 +339,26 @@ export function InterestsSection() {
                     />
                   </div>
                   <div className="p-3">
-                    <p className="text-sm font-medium text-center">{item.name}</p>
+                    <p className="text-base font-medium text-center">{item.name}</p>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </TabsContent>
+
+          <TabsContent value="books" className="mt-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {interests.books.map((item) => (
+                <Card key={item.name} className="overflow-hidden group hover:shadow-lg transition-shadow">
+                  <div className="aspect-[2/3] relative bg-muted">
+                    <img
+                      src={item.image || "/placeholder.svg"}
+                      alt={item.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-3">
+                    <p className="text-base font-medium text-center">{item.name}</p>
                   </div>
                 </Card>
               ))}
