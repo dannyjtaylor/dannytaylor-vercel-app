@@ -11,7 +11,7 @@ const projects = [
     date: "September 2025",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lXh8CnOlLuPntVPPy2f1yWRLdZgrHG.png",
     description:
-      "An internal AI assistant supporting over 650 city employees across 11 departments. Built with GPT-4o, Python, Docker, PostgreSQL, HTML, CSS, and JavaScript, the assistant enables natural language access to guides, manuals, forms, and employee data.",
+      "This was an internal AI assistant I made for the City of Winter Haven! It has over 650 city employee users across 11 departments. Built with GPT-4o, Python, Docker, PostgreSQL, HTML, CSS, and JavaScript, employees can use natural language to gain access to guides, manuals, forms, and employee info!",
     highlights: [
       "Implemented document ingestion for multiple formats (.pdf, .docx, .ppt, .txt) using LangChain and ChromaDB",
       "Designed custom REST API endpoints (/ask, /talk, /transcribe, /post, /get) to streamline FAQ resolution",
@@ -20,11 +20,24 @@ const projects = [
     tech: ["OpenAI", "LangChain", "ChromaDB", "Docker", "PostgreSQL", "FastAPI"],
   },
   {
+    title: "Employee Dashboard",
+    date: "May 2025",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RnKLCFPlyf1aLMPn3ic6LNynwNETrA.png",
+    description:
+      "This was a dashboard I made for the CoWH! This is so every department was on the same page, and new employees knew exactly what sites to access and softwares to get on their first day.",
+    highlights: [
+      "Engineered the City of Winter Haven's internal Homepage system using Docker Compose, uvicorn, & YAML to centralize access to departmental tools and resources",
+      "Designed dynamic web interface to streamline onboarding, form distribution, & cross-departmental navigation",
+      "Hosted platform on city's internal network, improving operational efficiency & UX for 650+ municipal employees",
+    ],
+    tech: ["Homepage", "YAML", "Docker Compose", "uvicorn"],
+  },
+  {
     title: "32-bit RISC-V Processor",
     date: "April 2025",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-qR4jd2wmRm3Q24BcjpnXjlf8GvaoiD.png",
     description:
-      "Designed & simulated a fully functional 32-bit RISC-V processor in Logisim, implementing core components including RAM, ROM, ALU, control logic, & both instruction and data memory to execute assembly instructions.",
+      "This was a 32-bit RISC-V processor designed & simulated in Logisim. It had core components like RAM, ROM, ALU, control logic, & both instruction and data memory to execute assembly instructions! We also did VGA output as a bonus.",
     highlights: [
       "Prototyped & verified the processor on an Intel DE10-Lite FPGA using Verilog & SystemVerilog with 100% accuracy",
       "Expanded capabilities with 12 custom instructions & VGA output",
@@ -43,7 +56,7 @@ const projects = [
     date: "November 2024",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-onMD1pdY2yyAe9oBKYGAOLIkmoeALk.png",
     description:
-      "Autonomous electric vehicle featuring a 3D-printed PLA chassis and powered by DC motors, MOSFETs, & 9V batteries on a breadboard platform.",
+      "This was an autonomous EV featuring a 3D-printed PLA chassis (from a Bambu X1C) and powered by DC motors, MOSFETs, & 9V batteries on a breadboard platform.",
     highlights: [
       "Implemented PWM control for all-wheel drive using AVR C on Arduino Uno R3",
       "Real-time 180° object detection via 3 ultrasonic sensors & LED indicators",
@@ -56,7 +69,7 @@ const projects = [
     date: "November 2024",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-XuKThrBaJSwCHJ7bl5gP1WPz0O8CoW.jpeg",
     description:
-      "Circuit capable of executing XOR, AND, OR, XNOR, NAND, NOR, magnitude comparison, and binary addition for two 4-bit inputs.",
+      "This was a circuit capable of executing XOR, AND, OR, XNOR, NAND, NOR, magnitude comparison, and binary addition for two 4-bit inputs! Simulated in Multisim :)",
     highlights: [
       "Verified in Multisim with 100% accuracy before physical construction",
       "Built on breadboard using 13 logic gate IC chips, four 8x1 multiplexers, and five LEDs",
@@ -69,7 +82,7 @@ const projects = [
     date: "July 2025",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image%20%284%29-4fcanBxBIERwirORABHSW8nq8Qf2UW.png",
     description:
-      "Developed a full-stack CRUD application for the City of Winter Haven to streamline employee management across 11 departments with an Excel-like interface. Note: All information displayed is public data as this was developed for the municipality of Winter Haven, Florida.",
+      "This was a full-stack CRUD database for the City of Winter Haven! I had the goal to streamline our employee database across 11 departments with an Excel-like interface. (Note: All information displayed is public data as this was developed for the municipality of Winter Haven, Florida!!)",
     highlights: [
       "Featured manual input and bulk import/export capabilities for employee data",
       "RESTful endpoints like /put enabled seamless record updates",
@@ -82,7 +95,7 @@ const projects = [
     date: "June 2025",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image%20%282%29-m1kbmQWEPL6SYSCRwCmdKJSHjlX35L.png",
     description:
-      "Emulated enterprise-grade deployment workflows using GitLab Runner, Docker, Kubernetes, and Prometheus.",
+      "Here I tried my hand at a crucial DevOps tool to emulate the way big companies do their CI/CD. I used GitLab Runner, Docker, Kubernetes, and Prometheus for our coding projects using VMWare for the dev/prod environments!",
     highlights: [
       "Designed multi-stage pipeline with security scanning, build, test, audit, and image creation",
       "Dual deployment phases to test and production VMs",
@@ -94,7 +107,8 @@ const projects = [
     title: "Autonomous Vehicle Simulator",
     date: "November 2024",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image%20%283%29-bbJtiLpUf1jo84gHv2rdHsmajAQ7Wc.png",
-    description: "Simulink simulation of an autonomous vehicle that replicates real-world driving dynamics.",
+    description:
+      "This was a Simulink simulation of an autonomous vehicle that replicates real-world driving dynamics. I modeled it off my professor's car, a Tesla Model Y.",
     highlights: [
       "Modeled longitudinal & lateral controllers (PID, Pure Pursuit, & Stanley)",
       "Tested on reference path of Interstate 4",
@@ -107,7 +121,7 @@ const projects = [
     date: "April 2024",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-38KfWOd47Lvpg5sKw5x1NgC9qTnI18.png",
     description:
-      "Built a 60-second stopwatch circuit using sequential logic on a breadboard, designed to count from 0 to 59 and reset automatically.",
+      "This was a 60-second stopwatch circuit using sequential logic on a breadboard, designed to count from 0 to 59 and reset automatically. We had modulo 6 and 10 counters, a custom clock signal, and 7-segments for the output. Watch the demo and look at the simulations below! :D",
     highlights: [
       "Featured pause, resume, and reset functionality using D-flip flops",
       "Generated clock signal using 555 timer configured as astable multivibrator",

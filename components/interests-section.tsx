@@ -56,6 +56,10 @@ const interests = {
       name: "To Be Hero X",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VTR1hnOOSO7expLUCpBWb26KyKTFzY.png",
     },
+    {
+      name: "Fire Force",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-7JIhql5PubFVob7TJnypLtUdNha3YE.jpeg",
+    },
   ],
   games: [
     {
@@ -282,7 +286,7 @@ export function InterestsSection() {
                     />
                   </div>
                   <div className="p-3">
-                    <p className="text-base font-medium text-center">{item.name}</p>
+                    <p className="text-lg font-medium text-center">{item.name}</p>
                   </div>
                 </Card>
               ))}
@@ -301,7 +305,7 @@ export function InterestsSection() {
                     />
                   </div>
                   <div className="p-3">
-                    <p className="text-base font-medium text-center">{item.name}</p>
+                    <p className="text-lg font-medium text-center">{item.name}</p>
                   </div>
                 </Card>
               ))}
@@ -320,7 +324,7 @@ export function InterestsSection() {
                     />
                   </div>
                   <div className="p-3">
-                    <p className="text-base font-medium text-center">{item.name}</p>
+                    <p className="text-lg font-medium text-center">{item.name}</p>
                   </div>
                 </Card>
               ))}
@@ -339,7 +343,7 @@ export function InterestsSection() {
                     />
                   </div>
                   <div className="p-3">
-                    <p className="text-base font-medium text-center">{item.name}</p>
+                    <p className="text-lg font-medium text-center">{item.name}</p>
                   </div>
                 </Card>
               ))}
@@ -358,7 +362,7 @@ export function InterestsSection() {
                     />
                   </div>
                   <div className="p-3">
-                    <p className="text-base font-medium text-center">{item.name}</p>
+                    <p className="text-lg font-medium text-center">{item.name}</p>
                   </div>
                 </Card>
               ))}
@@ -377,7 +381,7 @@ export function InterestsSection() {
                     />
                   </div>
                   <div className="p-4">
-                    <p className="font-medium text-center">{item.name}</p>
+                    <p className="text-lg font-medium text-center">{item.name}</p>
                     {item.link && (
                       <a
                         href={item.link}

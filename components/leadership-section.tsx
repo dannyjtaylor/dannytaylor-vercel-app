@@ -10,7 +10,7 @@ const leadershipRoles = [
     period: "August 2022 - Present",
     type: "Social Services",
     description:
-      "In Rotaract, I participated in numerous volunteer and community projects. One event I participated in was volunteering at a Veteran's Day breakfast. I helped set up and host many veterans at our local community center. I also helped regulate traffic and pass out water at a local 5k race. I am grateful to also participate in a mentorship program between the Florida Polytechnic University Rotaract Club and the Auburndale Rotary Club. Here I was paired with Alex Cam, the Vice President of Operations for Cams Catering and serves as the President of the Greater Auburndale Chamber of Commerce, and serves on the Board of Directors for the Auburndale Rotary Club.",
+      "In Rotaract, I participated in numerous volunteer and community projects. I've volunteered at a Veteran's Day breakfast, helped regulate traffic and pass out water at a local 5k race, and regulated traffic at the Winter Haven Christmas Parade each year. I've participated in Buddy Ball, where we go and help special needs children play a game of baseball! I also help out in our Adopt-a-Road program where we clean up Research Way by Florida Polytechnic University every two months. I am grateful to also participate in a mentorship program between the Florida Polytechnic University Rotaract Club and the Auburndale Rotary Club. Here I was paired with Alex Cam, the Vice President of Operations for Cams Catering and Mayor of Auburndale.",
     skills: ["Volunteering", "Community Involvement", "Professional Development"],
     motto: "Fellowship through service",
     speakers: [
@@ -42,7 +42,7 @@ const leadershipRoles = [
     type: "Esports",
     subtitle: "Jett One-Trick",
     description:
-      "For our VALORANT team, I play the weekly matches against other schools like University of South Carolina, Florida Gulf Coast University, University of North Carolina at Chapel Hill, AVL. I've been pretty consistent in being Match MVP, leading my team to victory with my strat calling and pivoting, as well as my positioning, movement, and reaction-time during the round.",
+      "For our VALORANT team, I play the weekly matches against other schools like University of South Carolina, Florida Gulf Coast University, University of North Carolina at Chapel Hill, AVL, and University of Florida. I've been pretty consistent in being Match MVP, leading my team to victory with my strat calling and pivoting, as well as my positioning, movement, and reaction-time during the round.",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FGCU%20130-WcrvjrXzRWduWbqsnWALA1V5sIFZAD.png",
   },
 ]

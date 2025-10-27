@@ -28,6 +28,20 @@ export function ContactSection() {
               <p>
                 <span className="font-medium text-foreground">Status:</span> Graduating May 2026 (BS) • May 2027 (MS)
               </p>
+              <p>
+                <span className="font-medium text-foreground">Discord:</span> imafanofcats
+              </p>
+              <p>
+                <span className="font-medium text-foreground">Instagram:</span>{" "}
+                <a
+                  href="https://instagram.com/fierylites"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:underline"
+                >
+                  fierylites
+                </a>
+              </p>
             </div>
           </div>
 

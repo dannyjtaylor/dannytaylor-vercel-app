@@ -20,7 +20,7 @@ export function HeroSection() {
         <div className="space-y-4">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-balance">Daniel J. Taylor</h1>
           <p className="text-xl md:text-2xl text-muted-foreground font-sans">
-            Computer Engineering Senior, Electrical Engineering EE (4+1)
+            Computer Engineering Senior, Electrical Engineering (4+1)
           </p>
         </div>
 
