@@ -8,7 +8,7 @@ export function ResumeSection() {
       <div className="max-w-4xl mx-auto space-y-8">
         <div className="text-center space-y-4">
           <h2 className="text-3xl md:text-4xl font-bold">Resumes</h2>
-          <p className="text-muted-foreground">View or download my resumes! They're tailored for different roles :3</p>
+          <p className="text-muted-foreground">View or download my resumes! They're tailored for different roles :)</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">

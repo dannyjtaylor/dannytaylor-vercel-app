@@ -9,7 +9,7 @@ export function ContactSection() {
     <section className="py-20 px-4">
       <div className="max-w-4xl mx-auto space-y-12">
         <div className="text-center space-y-4">
-          <h2 className="text-3xl md:text-4xl font-bold">Let's connect! :3</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Let's connect!</h2>
         </div>
 
         <Card className="p-8 space-y-6">

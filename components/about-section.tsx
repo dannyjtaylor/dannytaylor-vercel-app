@@ -22,10 +22,10 @@ export function AboutSection() {
             <p>
               I'm keeping my options open to all Computer Engineering, Software Engineering/Development, Embedded
               Engineering, Automotive, IT, and Quantum Computing opportunities. Looking forward to getting to know you &
-              the team! :3
+              the team! :)
             </p>
             <p>
-             P.S.: Ask me about my Capstone Project and Discord bot!
+             PS: Ask me about my Capstone Project and Discord bot!
             </p>
           </div>
         </div>
