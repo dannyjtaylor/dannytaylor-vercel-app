@@ -10,7 +10,7 @@ export function HeroSection() {
         <div className="flex justify-center mb-6">
           <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/20">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HaqPKtqnO2L7Jh7EQYuTZ6EXCrsxTD.png"
+              src="/images/design-mode/image.png"
               alt="Daniel J. Taylor"
               className="w-full h-full object-cover"
             />

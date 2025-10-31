@@ -22,13 +22,13 @@ export function ResumeSection() {
             </div>
             <div className="flex gap-3">
               <Button asChild className="flex-1 gap-2">
-                <a href="/Daniel_Taylor_Software_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/dannyjtaylor/overlay/1761330485042/single-media-viewer/?profileId=ACoAAEa30iEB-l2Y78MS48KDaCulXJHxqG4x6VU" target="_blank" rel="noopener noreferrer">
                   <FileText className="h-4 w-4" />
                   View PDF
                 </a>
               </Button>
               <Button asChild variant="outline" className="gap-2 bg-transparent">
-                <a href="/Daniel_Taylor_Software_Resume.pdf" download>
+                <a href="https://www.linkedin.com/in/dannyjtaylor/overlay/1761330485042/single-media-viewer/?profileId=ACoAAEa30iEB-l2Y78MS48KDaCulXJHxqG4x6VU" download>
                   <Download className="h-4 w-4" />
                   Download
                 </a>
@@ -46,13 +46,13 @@ export function ResumeSection() {
             </div>
             <div className="flex gap-3">
               <Button asChild className="flex-1 gap-2">
-                <a href="/Daniel_Taylor_General_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/dannyjtaylor/overlay/1761278813909/single-media-viewer/?profileId=ACoAAEa30iEB-l2Y78MS48KDaCulXJHxqG4x6VU" target="_blank" rel="noopener noreferrer">
                   <FileText className="h-4 w-4" />
                   View PDF
                 </a>
               </Button>
               <Button asChild variant="outline" className="gap-2 bg-transparent">
-                <a href="/Daniel_Taylor_General_Resume.pdf" download>
+                <a href="https://www.linkedin.com/in/dannyjtaylor/overlay/1761278813909/single-media-viewer/?profileId=ACoAAEa30iEB-l2Y78MS48KDaCulXJHxqG4x6VU" download>
                   <Download className="h-4 w-4" />
                   Download
                 </a>
@@ -70,13 +70,13 @@ export function ResumeSection() {
             </div>
             <div className="flex gap-3">
               <Button asChild className="flex-1 gap-2">
-                <a href="/Daniel_Taylor_Embedded_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/dannyjtaylor/overlay/1761278868858/single-media-viewer/?profileId=ACoAAEa30iEB-l2Y78MS48KDaCulXJHxqG4x6VU" target="_blank" rel="noopener noreferrer">
                   <FileText className="h-4 w-4" />
                   View PDF
                 </a>
               </Button>
               <Button asChild variant="outline" className="gap-2 bg-transparent">
-                <a href="/Daniel_Taylor_Embedded_Resume.pdf" download>
+                <a href="https://www.linkedin.com/in/dannyjtaylor/overlay/1761278868858/single-media-viewer/?profileId=ACoAAEa30iEB-l2Y78MS48KDaCulXJHxqG4x6VU" download>
                   <Download className="h-4 w-4" />
                   Download
                 </a>
@@ -94,13 +94,13 @@ export function ResumeSection() {
             </div>
             <div className="flex gap-3">
               <Button asChild className="flex-1 gap-2">
-                <a href="/Daniel_Taylor_Automotive_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/dannyjtaylor/overlay/1761278838762/single-media-viewer/?profileId=ACoAAEa30iEB-l2Y78MS48KDaCulXJHxqG4x6VU" target="_blank" rel="noopener noreferrer">
                   <FileText className="h-4 w-4" />
                   View PDF
                 </a>
               </Button>
               <Button asChild variant="outline" className="gap-2 bg-transparent">
-                <a href="/Daniel_Taylor_Automotive_Resume.pdf" download>
+                <a href="https://www.linkedin.com/in/dannyjtaylor/overlay/1761278838762/single-media-viewer/?profileId=ACoAAEa30iEB-l2Y78MS48KDaCulXJHxqG4x6VU" download>
                   <Download className="h-4 w-4" />
                   Download
                 </a>

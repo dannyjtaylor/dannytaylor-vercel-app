@@ -24,13 +24,16 @@ export function AboutSection() {
               Engineering, Automotive, IT, and Quantum Computing opportunities. Looking forward to getting to know you &
               the team! :3
             </p>
+            <p>
+             P.S.: Ask me about my Capstone Project and Discord bot!
+            </p>
           </div>
         </div>
 
         <div className="flex justify-center mb-8">
           <div className="relative w-full max-w-3xl rounded-lg overflow-hidden shadow-lg">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NSH558bAZrdXOcm6DYb7UWPG1X0k0I.png"
+              src="https://media.licdn.com/dms/image/v2/D4E22AQGIOMeXH_t3SQ/feedshare-shrink_2048_1536/B4EZn.vxCeIMA0-/0/1760915568849?e=1763596800&v=beta&t=fucX3GVdroGTtECW0A4eUipMBBXN5lhCgZra09Ffhxg"
               alt="Daniel presenting at a workshop"
               className="w-full h-auto object-cover"
             />
