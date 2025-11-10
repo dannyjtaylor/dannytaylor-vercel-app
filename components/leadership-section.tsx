@@ -15,8 +15,7 @@ const leadershipRoles = [
     motto: "Fellowship through service",
     speakers: [
       "Alex Cam - Mayor of Auburndale",
-      "Jeff Tillman - City Manager of Auburndale",
-      "Robert Green - Ex-Mayor and Ex-City Manager of Auburndale",
+      "Robert Green - Prev. Mayor and City Manager of Auburndale",
       "Hiep Nguyen - CIO/Smart City Officer for the City of Winter Haven",
       "Greg Recker, COO of Chastain Skillman",
       "Sam Sandusky, CEO of Big Sur Technology",
